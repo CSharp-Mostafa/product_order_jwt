@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "bcaafb9a-808b-4616-975c-24a68a46f9db",
+		"name": "Exam_10",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28055832"
+	},
+	"item": [
+		{
+			"name": "http://localhost:27768/api/order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:27768/api/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "27768",
+					"path": [
+						"api",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:27768/api/order/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:27768/api/order/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "27768",
+					"path": [
+						"api",
+						"order",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:27768/api/order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "customerName",
+							"value": "Nizam",
+							"type": "text"
+						},
+						{
+							"key": "imageFile",
+							"type": "file",
+							"src": "/C:/Users/idb_c#/Pictures/download.jpg"
+						},
+						{
+							"key": "orderDate",
+							"value": "03-05-2000",
+							"type": "text"
+						},
+						{
+							"key": "isComplete",
+							"value": "True",
+							"type": "text"
+						},
+						{
+							"key": "orderDetail",
+							"value": "[\n               {\n                \"productId\": 1,\n                \"quantity\": 10,\n                \"price\": 500.00\n               },\n \t       {\n                \"productId\": 1,\n                \"quantity\": 20,\n                \"price\": 2000.00\n               }\n             ]",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:27768/api/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "27768",
+					"path": [
+						"api",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:27768/api/order/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "customerName",
+							"value": "Mostofa",
+							"type": "text"
+						},
+						{
+							"key": "imageFile",
+							"type": "file",
+							"src": "/C:/Users/idb_c#/Pictures/images.jpg"
+						},
+						{
+							"key": "orderDate",
+							"value": "01-01-2000",
+							"type": "text"
+						},
+						{
+							"key": "isComplete",
+							"value": "True",
+							"type": "text"
+						},
+						{
+							"key": "orderDetail",
+							"value": "[\n               {\n                \"productId\": 1,\n                \"quantity\": 10,\n                \"price\": 500.00\n               },\n \t       {\n                \"productId\": 2,\n                \"quantity\": 10,\n                \"price\": 500.00\n               }\n             ]",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:27768/api/order/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "27768",
+					"path": [
+						"api",
+						"order",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:27768/api/order/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:27768/api/order/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "27768",
+					"path": [
+						"api",
+						"order",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
